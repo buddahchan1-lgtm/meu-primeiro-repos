@@ -1,17 +1,11 @@
-const btn = document.getElementById('openPopup');
-const overlay = document.getElementById('popupOverlay');
-const close = document.getElementById('closePopup');
+const janela = document.getElementById('janela');
+const btnAbrir = document.getElementById('botaoAbrir');
+const btnFechar = document.getElementById('botaoFechar');
 
-btn.onclick = () => {
-    overlay.style.display = 'block';
+ btnAbrir.onclick = function() {
+    janela.style.display = 'block';
 }
 
-close.onclick = () => {
-    overlay.style.display = 'none';
-}
-
-window.onclick = (event) => {
-    if (event.target == overlay) {
-        overlay.style.display = 'none';
-    }
+ btnFechar.onclick = function() {
+    janela.style.display = 'none';
 }
