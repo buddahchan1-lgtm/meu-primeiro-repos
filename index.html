@@ -1,35 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto IFES</title>
+    <title>Projeto Simples</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Meu Site</h1>
-    </header>
+    <button id="botaoAbrir">VER GIF</button>
 
-    <section>
-        <h2>Bem-vindo ao projeto</h2>
-        <button id="openPopup">Ver GIF Especial</button>
-
-        <div id="popupOverlay" class="overlay">
-            <div class="popup-content">
-                <span id="closePopup" class="close">&times;</span>
-                <h3>Meu Carrossel de GIFs</h3>
-                <div class="carousel">
-                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueXZueXZueXZueXZueXZueXZueXZueXZueXZueXZueXZueXZueCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKMGpxP5OZMCCVq/giphy.gif" alt="Charizard">
-                </div>
-            </div>
+    <div id="janela" class="overlay">
+        <div class="caixa">
+            <button id="botaoFechar">Fechar [X]</button>
+            <br><br>
+            <img src="https://media.tenor.com/BSJdU4PZtjoAAAAM/pokemon-evolution.gif" width="100%">
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; Todos os direitos reservados</p>
-    </footer>
+    </div>
 
     <script src="main.js"></script>
 </body>
